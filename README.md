@@ -16,6 +16,7 @@ Have you ever pulled up Netflix and stared blankly at the screen as trailers you
 
 ## Team Members
 Shristi Sharma, Naomi Ovrutsky, Samuel Osei
+
 Every member equally contributed to all parts of the project, from idea creation, API finding, data extraction, analysis, and presentation, we all helped with everything and built off of each other's ideas.
 
 ## Goals Achieved
