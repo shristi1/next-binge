@@ -1,0 +1,85 @@
+/** ---------------------- GENERAL ---------------------- **/
+
+body {
+    /* background-image: url(https://cdn.tmobile.com/content/dam/t-mobile/ntm/specific-use/netflix/bg/619306-bg-full-netflix-grid-v2.desktop.jpg) */
+    background-color: black;
+}
+
+/** ---------------------- HEADING ---------------------- **/
+
+.heading {
+    font-family: 'Space Mono', monospace;
+    color: red;
+    font-size: 60px;
+}
+
+.heading-wrapper {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    /* margin: -100% 0 0 -100px; */
+}
+
+.heading-content {
+    font-family: 'Space Mono', monospace;
+    color: white;
+    font-size: 16px;
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/** ---------------------- CONTENT ---------------------- **/
+
+.content-div {
+    background-color: rgb(255, 127, 133);
+    border-radius: 4px;
+    border-style: double;
+    border-width: 6px;
+    border-color: #596598;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin: -170px 0 0 -270px;
+    display: flex;
+}
+
+.content-text {
+    font-family: 'Space Mono', monospace;
+    /* color: darkblue; */
+    background-color: rgb(255, 127, 133);
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    width: 700px;
+    flex: 100%;
+}
+
+#go-button {
+    background-color: #5b6698;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    margin-top: 20px;
+}
+
+.movie-listing {
+    background-color: rgb(255, 127, 133);
+    display: flex;
+    text-decoration: none;
+
+}
+
+img {
+    max-width: 90%;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        max-width: 50%;
+    }
+}

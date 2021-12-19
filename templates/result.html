@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>API DEMO</title>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="heading-wrapper">
+        <span class="heading">Next Binge!</span> 
+        <p class="heading-content">Introducing...your next show!</p>
+        <div class="content-text">
+          <ol>
+            {% for movie in data %}
+              <div class="movie-listing">
+                <li>
+                  <div >
+                    <h3>{{movie["originalTitle"]}}</h3>
+                  </div>
+                  <div>
+                    <h4>IMDB TV Rating: {{movie["imdbRating"]}}</h4>
+                  </div>
+                  <div>
+                    <img src="{{movie['posterURLs']['92']}}" width="92" height="136">
+                  </div>
+                  <br>
+                  <br>
+                </li>
+              </div>
+            {% endfor %}
+          </ol>
+          <form action="http://127.0.0.1:5000/" style="padding-right: 50px;">
+            <input type="submit" value="Get New Results" id="go-button"/>
+          </form>
+        </div>
+    </div>
+  </body>
+</html>
